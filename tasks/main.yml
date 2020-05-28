@@ -15,10 +15,10 @@
 - name: echo IP address
   debug: var=out.stdout
 
-- name: echo date
-  command: date
+- name: echo python version
+  script: echo.py
   register: out
 
-- name: echo date
+- name: echo python version
   debug: var=out.stdout
 
